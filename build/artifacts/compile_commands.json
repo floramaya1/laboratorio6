@@ -1,0 +1,26 @@
+[
+  {
+    "directory": "/c/Users/amaya/OneDrive/Documentos/electronica4/laboratorio6_nuevo",
+    "file": "test/test_reloj.c",
+    "command": "gcc -I\"build/test/mocks/test_reloj\" -I\"test/support\" -I\"inc\" -I\"build/vendor/unity/src\" -I\"build/vendor/cmock/src\" -D\"TEST\" -D\"UNITY_EXCLUDE_FLOAT\" -D\"UNITY_USE_COMMAND_LINE_ARGS\" -DGNU_COMPILER -g -c \"test/test_reloj.c\" -o \"build/test/out/test_reloj/test_reloj.o\" -MMD -MF \"build/test/dependencies/test_reloj.d\"",
+    "output": "build/test/out/test_reloj/test_reloj.o"
+  },
+  {
+    "directory": "/c/Users/amaya/OneDrive/Documentos/electronica4/laboratorio6_nuevo",
+    "file": "src/reloj.c",
+    "command": "gcc -I\"build/test/mocks/test_reloj\" -I\"test/support\" -I\"inc\" -I\"build/vendor/unity/src\" -I\"build/vendor/cmock/src\" -D\"TEST\" -D\"UNITY_EXCLUDE_FLOAT\" -D\"UNITY_USE_COMMAND_LINE_ARGS\" -DGNU_COMPILER -g -c \"src/reloj.c\" -o \"build/test/out/test_reloj/reloj.o\" -MMD -MF \"build/test/dependencies/reloj.d\"",
+    "output": "build/test/out/test_reloj/reloj.o"
+  },
+  {
+    "directory": "/c/Users/amaya/OneDrive/Documentos/electronica4/laboratorio6_nuevo",
+    "file": "build/test/runners/test_reloj_runner.c",
+    "command": "gcc -I\"build/test/mocks/test_reloj\" -I\"test/support\" -I\"inc\" -I\"build/vendor/unity/src\" -I\"build/vendor/cmock/src\" -D\"TEST\" -D\"UNITY_EXCLUDE_FLOAT\" -D\"UNITY_USE_COMMAND_LINE_ARGS\" -DGNU_COMPILER -g -c \"build/test/runners/test_reloj_runner.c\" -o \"build/test/out/test_reloj/test_reloj_runner.o\" -MMD -MF \"build/test/dependencies/test_reloj_runner.d\"",
+    "output": "build/test/out/test_reloj/test_reloj_runner.o"
+  },
+  {
+    "directory": "/c/Users/amaya/OneDrive/Documentos/electronica4/laboratorio6_nuevo",
+    "file": "build/vendor/unity/src/unity.c",
+    "command": "gcc -I\"test/support\" -I\"build/vendor/unity/src\" -D\"TEST\" -D\"UNITY_EXCLUDE_FLOAT\" -D\"UNITY_USE_COMMAND_LINE_ARGS\" -DGNU_COMPILER -g -c \"build/vendor/unity/src/unity.c\" -o \"build/test/out/test_reloj/unity.o\" -MMD -MF \"build/test/dependencies/unity.d\"",
+    "output": "build/test/out/test_reloj/unity.o"
+  }
+]

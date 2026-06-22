@@ -4,7 +4,7 @@ Copyright 2016-2025, Laboratorio de Microprocesadores
 Facultad de Ciencias Exactas y Tecnologia
 Universidad Nacional de Tucuman
 http://www.microprocesadores.unt.edu.ar/
-Copyright 2016-2025, Esteban Volentini <evolentini@herrera.unt.edu.ar>
+Copyright 2016-2025, 2026, Florencia Belen Amaya <amayaflorb@gmail.com>
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
 the Software without restriction, including without limitation the rights to
@@ -114,7 +114,7 @@ void DisplayWriteBCD(display_t self, uint8_t * number, uint8_t size) {
         return;
     }
     for (uint8_t i = 0; i < size && i < self->digits; i++) {
-        self->display_memory[i] = SEGMENTS_TABLE[number[i] % 10];
+        self->display_memory[i] = (self->display_memory[i] & SEGMENT_P) | SEGMENTS_TABLE[number[i] % 10];
     }
 }
 

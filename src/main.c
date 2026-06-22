@@ -2,7 +2,7 @@
  Copyright (c) 2022-2025, Laboratorio de Microprocesadores
  Facultad de Ciencias Exactas y Tecnología, Universidad Nacional de Tucumán
  https://www.microprocesadores.unt.edu.ar/
- Copyright (c) 2022-2025, Esteban Volentini <evolentini@herrera.unt.edu.ar>
+ Copyright (c) 2026, Florencia Belen Amaya <amayaflorb@gmail.com>
  SPDX-License-Identifier: MIT
 *************************************************************************************************/
 /** @file   main.c
@@ -79,7 +79,7 @@ static void TestKeys(board_t board) {
     if (accept) {
     static bool flashing = false;
     flashing = !flashing;
-    DisplayFlashDigits(board->display, 0, 3, flashing ? 200 : 0);
+    DisplayFlashDigits(board->display, 0, 3, flashing ? 500 : 0);
 }
     if (cancel) {
         DisplayToggleDots(board->display, 0, 3);
